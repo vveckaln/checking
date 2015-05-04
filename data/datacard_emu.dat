@@ -1,48 +1,17 @@
-# https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideHiggsAnalysisCombinedLimit#How_to_prepare_the_datacard
-
-imax 1     # this remains as it is
-jmax *     # this is the number of processes (columns)
-kmax *     # this is the number of nuisance parameters (rows)
+imax 1
+jmax *
+kmax *
 -------------------------------
-shapes data        ** data/files/Data8TeV_SingleMu2012_TOTAL_out.root                    Pt_tau
-shapes muon_tau    ** data/files/MC8TeV_DYJetsToLL_muon_tau_TOTAL_out.root               Pt_tau
-shapes diboson     ** data/files/MC8TeV_diboson_TOTAL_out.root                           Pt_tau
-shapes DYJetsToLL  ** data/files/MC8TeV_DYJetsToLL_TOTAL_out.root                        Pt_tau
-#shapes other_ttbar * data/files/MC8TeV_TTJetsMassiveBinDecay_other_ttbar_TOTAL_out.root Pt_tau
-#shapes single_t    * data/files/MC8TeV_single_t_TOTAL_out.root                          Pt_tau
-#shapes QCD         * data/files/MC8TeV_QCD_TOTAL_out.root                               Pt_tau
-#shapes Wjets       * data/files/MC8TeV_WJets_TOTAL_out.root                             Pt_tau
-
+shapes data        * * data/files/Data8TeV_SingleMu2012_TOTAL_out.root                    Pt_tau
+shapes muon_tau    * * data/files/MC8TeV_DYJetsToLL_muon_tau_TOTAL_out.root               Pt_tau
 -------------------------------
-bin 1   #name of the channel
+bin 1
 observation 23478.000000
 -------------------------------
-                           bin      1      1      1      1      1      1      1      1   # name of the channel
-                       process signal     vv    qcd      w  ttbar    ttv     st     dy   # name of the sample
-                       process      0      1      2      3      4      5      6      7   # numeric code (<=0 signal) (>0 backgrounds)
-                          rate 20471.944 644.178  0.012 45.734 54.452 69.146 1121.438 990.977   # yield at final selection step for each sample
+                           bin      1      1      
+                       process data     muon_tau  
+                       process      0      1      
+                          rate 20471.944 644.178  
 -------------------------------
-                          lumi_8TeV        lnN 1.026  1.026  1.026  1.026  1.026  1.026  1.026      - 
-
-                          
-                          
-#                        seleff_8TeV        lnN 1.020  1.020  1.020  1.020  1.020  1.020  1.020      - 
-#                                 br        lnN 1.017      -      -      -  1.017      -      -      - 
-#                              fakes        lnN      -      -    2.0    2.0    2.0      -      -      - 
-
-
-#                    dy_emu_template      shape      -      -      -      -      -      -      -      1  
-#                                jer      shape      1      1      1      1      1      1      1      1  
-#                                jes      shape      1      1      1      1      1      1      1      1  
-#                           mcsignal      shape      -      -      -      -      -      -      -      1  
-#                               meps      shape      1      -      -      -      -      -      -      1  
-#                                 pu      shape      1      1      1      1      1      1      1      1  
-#                                 q2      shape      1      -      -      -      -      -      -      1  
-#                     ttbar_emu_stat      shape      1      -      -      -      1      -      -      - 
-#                        vv_emu_stat      shape      -      1      -      -      -      -      -      - 
-#                       qcd_emu_stat      shape      -      -      1      -      -      -      -      - 
-#                         w_emu_stat      shape      -      -      -      1      -      -      -      - 
-#                       ttv_emu_stat      shape      -      -      -      -      -      1      -      - 
-#                        st_emu_stat      shape      -      -      -      -      -      -      1      - 
-#                        dy_emu_stat      shape      -      -      -      -      -      -      -      1 
-
+                          lumi_8TeV        lnN 1.044  
+ 
