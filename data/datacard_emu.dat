@@ -1,17 +1,23 @@
 imax 1
-jmax 1
+jmax 5
 kmax *
 -------------------------------
-shapes 	signal    	*	data/files/MC8TeV_DYJetsToLL_muon_tau_TOTAL_out.root	Pt_tau
-shapes 	background 	*    	data/files/MC8TeV_WJets_TOTAL_out.root			Pt_tau
+shapes 	data_obs 	*    	data/files/Data8TeV_SingleMu2012_TOTAL_out.root				Pt_tau
+shapes 	signal    	*	data/files/MC8TeV_TTJetsMassiveBinDecay_muon_tau_TOTAL_out.root		Pt_tau
+shapes	other_ttbar	*	data/files/MC8TeV_TTJetsMassiveBinDecay_other_ttbar_TOTAL_out.root  	Pt_tau
+shapes	single_t	*	data/files/MC8TeV_single_t_TOTAL_out.root				Pt_tau
+shapes	diboson		*	data/files/MC8TeV_diboson_TOTAL_out.root				Pt_tau
+shapes	DYJetsToLL	*	data/files/MC8TeV_DYJetsToLL_TOTAL_out.root      			Pt_tau
+shapes 	WJets		*    	data/files/MC8TeV_WJets_TOTAL_out.root					Pt_tau
+shapes	QCD		*	data/files/MC8TeV_QCD_TOTAL_out.root             			Pt_tau
 -------------------------------
 bin 		1
-observation 	23478.000000
+observation 	4715.000000
+-------------------------------	
+                           bin 			1		1      		1		1		1		1		1
+                       process 			signal     	WJets  		diboson		DYJetsToLL	other_ttbar	WJets		QCD
+                       process      		0      		1      		2		3		4		5		6
+                          rate 			2826.329218 	375.1		44.17		1.737		1390		375.099060 	0
 -------------------------------
-                           bin 			1		1      
-                       process 			signal     	background  
-                       process      		0      		1      
-                          rate 			20471.944 	644.178  
--------------------------------
-                          lumi_8TeV lnN 	1.044  		1.044
+                          lumi_8TeV lnN 	1.044  		1.044		1.044		1.044		1.044		1.044		1.044
 
