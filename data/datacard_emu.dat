@@ -1,5 +1,5 @@
 imax 1
-jmax 5
+jmax 6
 kmax *
 -------------------------------
 shapes 	data_obs 	*    	data/files/Data8TeV_SingleMu2012_TOTAL_out.root				Pt_tau
@@ -15,9 +15,9 @@ bin 		1
 observation 	4715.000000
 -------------------------------	
                            bin 			1		1      		1		1		1		1		1
-                       process 			signal     	WJets  		diboson		DYJetsToLL	other_ttbar	WJets		QCD
+                       process 			signal     	other_ttbar	single_t 	diboson		DYJetsToLL	WJets		QCD
                        process      		0      		1      		2		3		4		5		6
-                          rate 			2826.329218 	375.1		44.17		1.737		1390		375.099060 	0
+                          rate 			2826.329218 	1390		324		44.17		1.737		375.099060 	0
 -------------------------------
-                          lumi_8TeV lnN 	1.044  		1.044		1.044		1.044		1.044		1.044		1.044
+                          lumi_8TeV lnN 	1.044  		1.044		1.044		1.044		1.044		1.044		1.044		1.044
 
