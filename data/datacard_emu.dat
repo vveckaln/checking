@@ -1,17 +1,17 @@
 imax 1
-jmax *
-kmax *
+jmax 2
+kmax 1
 -------------------------------
-shapes data        * * data/files/Data8TeV_SingleMu2012_TOTAL_out.root                    Pt_tau
-shapes muon_tau    * * data/files/MC8TeV_DYJetsToLL_muon_tau_TOTAL_out.root               Pt_tau
+shapes data       * * data/files/Data8TeV_SingleMu2012_TOTAL_out.root                    Pt_tau
+shapes signal     * * data/files/MC8TeV_DYJetsToLL_muon_tau_TOTAL_out.root               Pt_tau
 -------------------------------
-bin 1
+bin muon_tau
 observation 23478.000000
 -------------------------------
-                           bin      1      1      
-                       process data     muon_tau  
+                           bin muon_tau     muon_tau      
+                       process data     signal  
                        process      0      1      
                           rate 20471.944 644.178  
 -------------------------------
-                          lumi_8TeV        lnN 1.044  
+                          lumi_8TeV        lnN 1.044  1.044
  
