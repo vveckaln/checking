@@ -11,11 +11,23 @@ shapes	tau_fakes	*	data/files/MC8TeV_tau_fakes_TOTAL_out.root				Pt_tau
 bin 		1
 observation 	4715.000000
 -------------------------------	
-                           bin 			1		1      		1		
-                       process 			signal     	other_bckg	tau_fakes	
-                       process      		0      		1      		2		
-                          rate 			2826.329218 	405.668280	1730.020562	
+			bin 			1		1      		1		
+			process			signal     	other_bckg	tau_fakes	
+			process      		0      		1      		2		
+			rate 			2826.329218 	405.668280	1730.020562	
 -------------------------------
-                          lumi_8TeV lnN 	1.044  		1.044		1.044	
-		          #seleff_8TeV lnN       1.020  	1.020  		1.020 	
+			lumi_8TeV lnN 		1.026  		1.026		1.026	
+			τ_jet_ident lnN		1.06		1.06		1.06
+			τ_misident lnN		1.043		1.043		1.043
+			tau_en_sc lnN		1.025		1.025		1.025
+			b_jet_mis lnN		1.016		1.016		1.016
+			jes lnN			1.051		1.051		1.051
+			lept_rec lnN		1.008		1.008		1.008
+			oth_bck	lnN		1.007		1.007		1.007			
+			mtrx lnN		1.013		1.013		1.013
+			fact_ren_sc lnN		1.029		1.029		1.029
+			generator lnN		1.015		1.015		1.015
+			hadron lnN		1.017		1.017		1.017
+			top_q lnN		1.005		1.005		1.005
+			pdf lnN			1.007		1.007		1.007
 
